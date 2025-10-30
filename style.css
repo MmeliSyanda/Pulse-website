@@ -1,19 +1,8 @@
-/*
-  terrible.css
-  Andrew Tunecliffe, 2015
-  http://atunnecliffe.com
-*/
-/* uncomment to see outlines of stuff when you hover *-/
-:hover {
-  background:rgba(0, 0, 0, 0.1);
-}/**/
-
 html,
 body {
   margin: 0;
   padding: 0;
 }
-
 .section {
   width: 100%;
 }
@@ -27,8 +16,6 @@ button{
     border-color:gold;
     border-radius:15px;
 }
-
-
 .container {
   position: relative;
   width: 1170px;
@@ -39,7 +26,6 @@ button{
   font-family: Roboto, 'Open Sans', Arial, sans-serif;
   overflow: hidden;
 }
-
 .center-section {
   display: flex;
   justify-content: center;
@@ -49,26 +35,22 @@ button{
   gap: 40px;       /* Space between mission & vision */
   margin-top: 40px;
 }
-
 .center-box {
   float: none;          /* Disable floating */
   margin: 0 auto;       /* Center horizontally */
   max-width: 450px;     /* Prevent them from stretching too wide */
 }
-
 .center-box .icon {
   font-size: 50px;
   color: #F44336;       /* Accent color */
   margin-bottom: 10px;
 }
-
 .center-box .service {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 10px;
   color: #111;
 }
-
 .center-box p {
   font-size: 16px;
   color: #444;
@@ -783,4 +765,53 @@ html {
     text-align: center;
   }
 }
+
+
+/* Mobile-First (Default is Mobile) */
+@media (max-width: 767px) {
+    .col.three, .col.four, .col-xs-12 {
+        width: 100%;  /* Stack everything */
+        margin: 10px 0;
+    }
+
+    .nav ul {
+        flex-direction: column;  /* Stack menu items */
+        display: none;  /* Hide by default for hamburger */
+    }
+
+    .nav.active ul { display: flex; }  /* Show on toggle - add JS for this */
+
+    /* Add Hamburger Icon (Requires JS in script.js) */
+    .header::after {  /* Pseudo-element for hamburger */
+        content: '\f0c9';  /* Font Awesome bars icon */
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        cursor: pointer;
+        display: block;
+    }
+
+    .hero { font-size: 1.5em; }  /* Smaller headings on mobile */
+    h2.hero { font-size: 1.2em; }
+
+    .footer .col-sm-6, .col-md-3 {
+        width: 100%;  /* Stack footer columns */
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .col.three { width: calc(50% - 20px); }  /* 2 columns */
+    .col.four { width: calc(50% - 20px); }
+    .col-md-3 { width: 50%; }  /* Footer 2-up */
+}
+
+/* Desktop (Already handled in base CSS) */
+@media (min-width: 1025px) {
+    /* No changes needed if base is desktop-friendly */
+}
+
+
+
+
+
 
