@@ -408,10 +408,11 @@ h2 {
   }
   .col.three {
     display: block;
-    width: 95%;
-    padding: 0;
+    width: 100%;
+    padding: 20px 0;
     margin: 0 auto;
     float: none;
+    height:auto;
   }
   .header {
     height: auto;
@@ -474,6 +475,7 @@ h2 {
 }
 
 
+
 .section.bg {
   background-color: #0b0b0b; /* optional dark theme */
   color: white;
@@ -502,13 +504,30 @@ h2 {
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s, box-shadow 0.3s;
+  height: 520px; /* 🔹 Set a fixed height for uniform cards */
 }
 
 .col.three:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
 }
+.col.threee {
+  width: 30%;
+  margin: 1.5%;
+  display: inline-block;
+  vertical-align: top;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 300px; /* 🔹 Set a fixed height for uniform cards */
+}
 
+.col.threee:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
 /* The image holder */
 .imgholder {
   width: 100%;
@@ -677,10 +696,91 @@ html {
 }
 
 
-#strategicobjective{
-  margin-top:32px;
+
+/* 🌿 Headings */
+#strategicobjective .feature.side,
+#programstructure .feature.side,
+#whoweare .feature.side{
+  font-size: 1.5rem;
+  color: #c88600; /* warm gold accent */
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 
-#programstructure{
-  margin-top:40px;
+#whoweare p{
+  padding-right:25px;
+  
 }
+#strategicobjective h2,
+#programstructure h2,
+#whoweare h2 {
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+  line-height: 1;
+  font-weight: 400;
+  margin: 10px 0 25px 0;
+  padding: 0 20px;
+}
+
+/* 📋 Bullet Points */
+#strategicobjective ul
+ {
+  list-style-type: disc;
+  padding-left: 70px; /* indentation like in Word */
+  padding-right:25px;
+  margin-top: 0;
+  color: #222;
+}
+
+#programstructure ul{
+  list-style-type: disc;
+  padding-left: 70px; /* indentation like in Word */
+  margin-top: 0;
+  padding-right:25px;
+  color: #222;
+}
+
+.social-footer22 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  gap: 18px; /* space between each row */
+}
+
+.social-footer22 li {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* space between icon and text */
+  font-family: "Poppins", sans-serif;
+}
+
+/* 🎨 Icon styling */
+.social-footer22 i {
+  font-size: 1.5rem;
+  width: 30px;
+  text-align: center;
+}
+
+/* Icon colors */
+.social-footer22 i.fa-whatsapp { color: #25d366; }
+.social-footer22 i.fa-facebook { color: #1877f2; }
+.social-footer22 i.fa-instagram { color: #e1306c; }
+.social-footer22 i.fa-linkedin { color: #0077b5; }
+
+/* Text color */
+.social-footer22 span {
+  color: white;
+  font-size: 1rem;
+}
+
+/* 📱 Responsive: center everything on small screens */
+@media (max-width: 600px) {
+  .social-footer22 li {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
