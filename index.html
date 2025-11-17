@@ -125,45 +125,43 @@
   <div class="container">
     <h1>About Us</h1>
     <h2>Who We Are</h2>
-    <div class="col threee" id="strategicobjective">
-      <h1 class="feature side">The Pulse Movement</h1>
-      <p class="side" style="text-align: justify;">
-        <ul class="side"  style="text-align: justify;">
-          <li>Pulse Movement (268-505 NPO) is a community-driven organization dedicated to fostering economic inclusion, skills development, and local enterprise growth through the 360º Local Economic Development Support Programme (360º LEDSP).</li>
-          <li>Bridging the gap between talent, opportunity, and growth by connecting communities, businesses, and government.</li>
-          <li>Creating sustainable change through collaborative local initiatives.</li>
-        </ul>
-      </p>
-    </div>
-    <div class="col threee" id="strategicobjective">
-     
-      <h1 class="feature side" style="text-align: justify;">Our Strategic Objectives</h1>
-      <p class="side" style="text-align: justify;">
-        <ul class="side" style="text-align: justify;">
-          <li>Partnering with industry, government, and businesses to drive a holistic 360º People Development Agenda.</li>
-          <li>Fostering a learning-oriented culture through talent management initiatives.</li>
-          <li>Developing new market pipelines and value chains for equal trade access.</li>
-          <li>Promoting equitable wealth distribution through enterprise development campaigns.</li>
-        </ul>
-     </p>
 
-    </div>
-    <div class="col threee" id="programstructure">
-      <h1 class="feature side">Program Structure</h1>
-      <p class="side">
-      <ul style="text-align: justify;">
-            <li><strong>Monthly Activities:</strong> Social, recreational, and educational programs 
-                leading up to the annual HomeComing© event.</li>
-            <li><strong>Focus Areas:</strong> Community development, health and welfare, education and
-                 skills, enterprise development.</li>
-            <li><strong>Talent Interventions:</strong> Arts, culture, sports, entrepreneurship, health, and
-                 leadership programs.</li>
+    <div class="col three">
+      <h1 class="feature side">The Pulse Movement</h1>
+      <div class="imgholder"><img src="Pulse Movement - Logo.png"></div>
+      <ul class="side">
+        <li>Pulse Movement (268-505 NPO) is a community-driven organization dedicated to fostering economic inclusion, skills development, and local enterprise growth through the 360º Local Economic Development Support Programme (360º LEDSP).</li>
+        <li>Bridging the gap between talent, opportunity, and growth by connecting communities, businesses, and government.</li>
+        <li>Creating sustainable change through collaborative local initiatives.</li>
       </ul>
-      </p>
     </div>
+
+    <div class="col three">
+      <h1 class="feature side">Our Strategic Objectives</h1>
+      <div class="imgholder"><img src="Objectives.jpg"></div>
+      <ul class="side">
+        <li>Partnering with industry, government, and businesses to drive a holistic 360º People Development Agenda.</li>
+        <li>Fostering a learning-oriented culture through talent management initiatives.</li>
+        <li>Developing new market pipelines and value chains for equal trade access.</li>
+        <li>Promoting equitable wealth distribution through enterprise development campaigns.</li>
+      </ul>
+    </div>
+
+    <div class="col three">
+      <h1 class="feature side">Program Structure</h1>
+      <div class="imgholder"><img src="Generate an image I can use that represents or showcases a program structure.jpg"></div>
+      <ul class="side">
+        <li><strong>Monthly Activities:</strong> Social, recreational, and educational programs leading up to the annual HomeComing© event.</li>
+        <li><strong>Focus Areas:</strong> Community development, health and welfare, education and skills, enterprise development.</li>
+        <li><strong>Talent Interventions:</strong> Arts, culture, sports, entrepreneurship, health, and leadership programs.</li>
+      </ul>
+    </div>
+
     <div class="group margin"></div>
-    
+  </div>
+
 </div>
+
 
 
 <script src="script.js"></script>
@@ -171,80 +169,169 @@
 
 
 <footer id="footer" class="footer-1">
-<div class="main-footer widgets-dark typo-light">
-  <div class="container">
-    <div class="row">
-      
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="widget subscribe no-box">
-              <h5 class="widget-title" id="contact">The Pulse Movement<span></span></h5>
-              <ul class="social-footer22" style="color: white;">
-                <li>Driving total economic growth through Talent Management, Business Facilitation, 
-                  and Business Acceleration.</li>
-                <li>A movement committed to empowering individuals, businesses, and communities for
-                  sustainable local development.</li>
 
-              </ul>
-            </div>
+  <!-- ✅ Embedded CSS (only affects this footer) -->
+  <style>
+    #footer {
+      background-color: #111;
+      color: #ccc;
+      width: 100%;
+      margin-top: auto;
+      position: relative;
+      bottom: 0;
+      left: 0;
+      padding: 40px 0 10px;
+      display: block;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body {
+      flex: 1;
+    }
+
+    .main-footer {
+      padding: 20px 5%;
+    }
+
+    .main-footer .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .widget-title {
+      color: #00bcd4;
+      margin-bottom: 15px;
+    }
+
+    .social-footer22 {
+      list-style: none;
+      padding: 0;
+    }
+
+    .social-footer22 li {
+      margin-bottom: 8px;
+    }
+
+    .social-footer22 a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .social-footer22 a:hover {
+      color: #00bcd4;
+    }
+
+    .fab {
+      margin-right: 8px;
+    }
+
+    #imageHolderrr img {
+      width: 120px;
+      height: auto;
+      margin-top: 10px;
+    }
+
+    .footer-copyright {
+      text-align: center;
+      padding-top: 10px;
+      border-top: 1px solid #333;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    /* ✅ Responsive adjustments for mobile */
+    @media (max-width: 768px) {
+      .row {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+
+      #imageHolderrr img {
+        margin: 10px auto;
+      }
+    }
+  </style>
+
+  <!-- ✅ Actual Footer Content -->
+  <div class="main-footer widgets-dark typo-light">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="widget subscribe no-box">
+            <h5 class="widget-title" id="contact">The Pulse Movement<span></span></h5>
+            <ul class="social-footer22" style="color: white;">
+              <li>Driving total economic growth through Talent Management, Business Facilitation, 
+                and Business Acceleration.</li>
+              <li>A movement committed to empowering individuals, businesses, and communities for
+                sustainable local development.</li>
+            </ul>
           </div>
-
-
-              <div class="col-xs-12 col-sm-6 col-md-3">
-
-                  <div class="widget no-box">
-                  <h5 class="widget-title">Social Links<span></span></h5>
-                  <ul class="social-footer22">
-                    <li>
-                    <a href="mailto:info@thepulsemovement.org" title="glorythemes">info@thepulsemovement.org</a></p>
-                    </li>
-                    <li>
-                      <div id="imageHolderrr"><img src="Screenshot 2025-11-03 124411.png" alt="powered by"></div>  
-                      </div>
-                    </li>
-                  </ul>
-                  
-                  
-                  
-    </div>
-     <div class="col-xs-12 col-sm-6 col-md-3">
-        <div class="widget subscribe no-box">
-          <h5 class="widget-title" id="contact">Contact Us<span></span></h5>
-          <ul class="social-footer22">
-            <li>
-              <a href="https://wa.me/27834289632" target="_blank">
-              <i class="fab fa-whatsapp"></i></a>
-              <span>083 428 9632</span>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/The Pulse Movement" target="_blank">
-              <i class="fab fa-facebook"></i></a>
-              <span>The Pulse Movement</span>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/thepulse_movement/" target="_blank">
-              <i class="fab fa-instagram"></i></a>
-              <span>@thepulse_movement</span>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/company/thepulsemovement/" target="_blank">
-              <i class="fab fa-linkedin"></i></a>
-              <span>The Pulse Movement</span>
-            </li>
-          </ul>
         </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="widget no-box">
+            <h5 class="widget-title">Social Links<span></span></h5>
+            <ul class="social-footer22">
+              <li>
+                <a href="mailto:info@thepulsemovement.org" title="glorythemes">info@thepulsemovement.org</a>
+              </li>
+              <li>
+                <div id="imageHolderrr">
+                  <img src="Screenshot 2025-11-03 124411.png" alt="powered by">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="widget subscribe no-box">
+            <h5 class="widget-title" id="contact">Contact Us<span></span></h5>
+            <ul class="social-footer22">
+              <li>
+                <a href="https://wa.me/27834289632" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <span>083 428 9632</span>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/The Pulse Movement" target="_blank"><i class="fab fa-facebook"></i></a>
+                <span>The Pulse Movement</span>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/thepulse_movement/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <span>@thepulse_movement</span>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/thepulsemovement/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <span>The Pulse Movement</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
-  
-<div class="footer-copyright">
-<div class="container">
-<div class="row">
-<div class="col-md-12 text-center" id="lastf">
-<p>Copyright The Pulse Movement © 2025. All rights reserved.</p>
-</div>
-</div>
-</div>
-</div>
-</footer>
 
+  <div class="footer-copyright">
+    <div class="container">
+      <p>Copyright The Pulse Movement © 2025. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
 </html>
