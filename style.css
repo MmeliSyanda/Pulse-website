@@ -16,6 +16,9 @@ button{
     border-color:gold;
     border-radius:15px;
 }
+#secondbtn{
+ padding:10px;
+}
 .container {
   position: relative;
   width: 1170px;
@@ -29,7 +32,8 @@ button{
 .center-section {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: c
+  enter;
   text-align: center;
   flex-wrap: wrap; /* Keeps it responsive */
   gap: 40px;       /* Space between mission & vision */
@@ -298,7 +302,7 @@ h1.hero:after {
 }
 
 .col .imgholder {
-  height: 300px;
+  height: 250px;
   width: 100%;
   background: #333;
   transition: background 0.3s linear;
@@ -689,16 +693,13 @@ html {
   font-weight: 700;
 }
 
-#whoweare p{
-  padding-right:25px;
-  
-}
+
 #strategicobjective h2,
 #programstructure h2,
 #whoweare h2 {
   font-size: 1rem;
   color: #333;
-  text-align: center;
+  text-align: left;
   line-height: 1;
   font-weight: 400;
   margin: 10px 0 25px 0;
@@ -710,8 +711,8 @@ html {
  {
   list-style-type: disc;
   padding-left: 70px; /* indentation like in Word */
-  padding-right:25px;
   margin-top: 0;
+  padding-right:25px;
   color: #222;
 }
 
@@ -722,6 +723,7 @@ html {
   padding-right:25px;
   color: #222;
 }
+
 
 .social-footer22 {
   list-style: none;
@@ -808,6 +810,23 @@ html {
 /* Desktop (Already handled in base CSS) */
 @media (min-width: 1025px) {
     /* No changes needed if base is desktop-friendly */
+}
+
+#imageHolderrr img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  width: 100%;
+  max-width: 200px; /* you can adjust this size */
+  margin: 20px auto;
+  background-color: #1e1e1e; /* dark theme card */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  padding: 10px;
+  display: flex;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top:-20px;
 }
 
 
